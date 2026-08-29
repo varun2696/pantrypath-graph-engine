@@ -177,7 +177,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## 6. Screenshots & Demo Video
 
 > **Hosted Application Demo**: [https://project-fd9jg3gyd-varun2696s-projects.vercel.app](https://project-fd9jg3gyd-varun2696s-projects.vercel.app)  
-> **Screen Recording Walkthrough**: `[https://drive.google.com/file/d/1kH-XxSIdjlvkEXgB_mEw4qroQOhSPe-R/view?usp=sharing]`
+> **Screen Recording Walkthrough**: [https://drive.google.com/file/d/1kH-XxSIdjlvkEXgB_mEw4qroQOhSPe-R/view?usp=sharing](https://drive.google.com/file/d/1kH-XxSIdjlvkEXgB_mEw4qroQOhSPe-R/view?usp=sharing)
 
 ### UI Showcase
 
