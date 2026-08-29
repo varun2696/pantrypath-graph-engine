@@ -188,4 +188,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ![Recipe Detail Screenshot](https://github.com/user-attachments/assets/7a0643bd-9da8-4260-ab38-77bf148f0d96)
 
 #### 3. Multi-Hop Graph Substitution Chain & "Recipes Like This" Recommendations
-![Multi-Hop Substitution and Recommendations](https://github.com/user-attachments/assets/94f13df8-0e6f-4c5a-bba5-985d88e074dc)
+![Multi-Hop Substitution and Recommendations](https://github.com/user-attachments/assets/8f6341fa-11d1-4400-98f7-d3bddeea3fee)
