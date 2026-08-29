@@ -1,9 +1,6 @@
 # PantryPath — Graph-Powered Smart Recipe & Substitution Engine
 
-> **Wexa AI — Take-Home Assignment Submission**  
-> **Candidate**: Varun  
-> **Submission Email**: hr@wexa.ai  
-> **Subject**: `CognoDB Assignment 2 – Varun`  
+> Full-stack Next.js (App Router) application backed by CognoDB (openCypher/Bolt graph database).
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)](https://vercel.com)
 [![Database](https://img.shields.io/badge/Database-CognoDB%20(openCypher)-emerald)](https://console.cognodb.com)
@@ -42,7 +39,7 @@ In a graph database, finding related recipes is a natural 2-hop pointer walk: fo
 
 ## 3. Graph Data Model
 
-### ASCII Diagram
+### Data Model Diagram
 
 ```
                     ┌─────────────────────────┐
@@ -64,18 +61,6 @@ In a graph database, finding related recipes is a natural 2-hop pointer walk: fo
                                                 │      :Ingredient       │
                                                 │     name, category     │
                                                 └────────────────────────┘
-```
-
-### Mermaid Diagram
-
-```mermaid
-graph LR
-    User[":User {name: 'Demo Pantry'}"] -->|:HAS| Ing1[":Ingredient (Greek Yogurt)"]
-    Ing1 -->|:SUBSTITUTE_FOR| Ing2[":Ingredient (Plain Yogurt)"]
-    Ing2 -->|:SUBSTITUTE_FOR| Ing3[":Ingredient (Buttermilk)"]
-    Recipe[":Recipe (Buttermilk Pancakes)"] -->|:USES {quantity: '1.5 cups'}| Ing3
-    Recipe -->|:USES| Ing4[":Ingredient (All-Purpose Flour)"]
-    OtherRecipe[":Recipe (Skillet Chicken)"] -->|:USES| Ing3
 ```
 
 ### Entities & Relationships
@@ -191,23 +176,16 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 6. Screenshots & Demo Video
 
-> **Hosted Application Demo**: `[Insert Hosted URL Here]`  
-> **Screen Recording Walkthrough**: `[Insert Loom / Video Link Here]`
+> **Hosted Application Demo**: [https://project-fd9jg3gyd-varun2696s-projects.vercel.app](https://project-fd9jg3gyd-varun2696s-projects.vercel.app)  
+> **Screen Recording Walkthrough**: `[https://drive.google.com/file/d/1kH-XxSIdjlvkEXgB_mEw4qroQOhSPe-R/view?usp=sharing]`
 
 ### UI Showcase
 
-| Dashboard & Real-Time Pantry Readiness | Multi-Hop Substitution Path & Graph Recommendations |
-| :---: | :---: |
-| ![PantryPath Dashboard Screenshot](https://placehold.co/600x400/0f172a/34d399?text=Dashboard+&+Live+Pantry+Checklist) | ![Recipe Detail Screenshot](https://placehold.co/600x400/0f172a/34d399?text=Multi-Hop+Substitution+Chain) |
+#### 1. Dashboard & Live Pantry Readiness
+![PantryPath Dashboard Screenshot](https://github.com/user-attachments/assets/1278bd9b-e284-482c-9e54-7d12d2ca39f7)
 
----
+#### 2. Recipe Detail & Ingredients View
+![Recipe Detail Screenshot](https://github.com/user-attachments/assets/7a0643bd-9da8-4260-ab38-77bf148f0d96)
 
-## 7. Deployment to Vercel
-
-1. Push your repository to GitHub.
-2. Import the repository in [Vercel](https://vercel.com).
-3. Under **Project Settings &rarr; Environment Variables**, add:
-   - `COGNODB_URI`
-   - `COGNODB_USER`
-   - `COGNODB_PASSWORD`
-4. Click **Deploy**.
+#### 3. Multi-Hop Graph Substitution Chain & "Recipes Like This" Recommendations
+![Multi-Hop Substitution and Recommendations](https://github.com/user-attachments/assets/94f13df8-0e6f-4c5a-bba5-985d88e074dc)
